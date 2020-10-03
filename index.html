@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/0be8ef42a3.js" crossorigin="anonymous"></script>
+
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <h1 class="nav-title">Weather App</h1>
+
+      <div class="nav-search-bar">
+        <input type="text" placeholder="Enter a location...">
+        <button class="btn search-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="nav-btn-container">
+        <button class="btn location-btn">Location</button>
+
+        <label class="nav-toggle">
+          <input type="checkbox">
+          <span class="slider round"></span>       
+        </label>
+      </div>
+    </nav>
+
+    <div class="overview-container">
+      <div class="location-info">
+        <div class="location">
+          <h2 class="location-name"></h2>
+          <p class="location-temperature"></p>
+          <p class="location-humidity"></p>
+          <p class="location-description"></p>
+        </div>
+      </div>
+      <div class="temperature-info">
+        <div class="info current-weather-container">
+          <p class="info-title">Currently</p>
+          <p class="info-temperature"></p>
+          <p class="info-description"></p>
+        </div>
+        <div class="info todays-high-container">
+          <p class="info-title">Today's High</p>
+          <p class="info-temperature"></p>
+          <p class="info-description"></p>
+        </div>
+        <div class="info todays-low-container">
+          <p class="info-title">Today's Low</p>
+          <p class="info-temperature"></p>
+          <p class="info-description"></p>
+        </div>
+        <div class="info tomorrows-weather-container">
+          <p class="info-title">Tomorrow</p>
+          <p class="info-temperature"></p>
+          <p class="info-description">Clear sky</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
